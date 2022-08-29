@@ -89,7 +89,7 @@ body {
 .ai {
     background-image: url(ai.png);
     width: 100%;
-    padding: 100%;
+    padding: 20px;
 }
 /* 定义图片底2:兴趣爱好 */
 .inter {
@@ -101,7 +101,7 @@ body {
 .keai {
     background-image: url(keai.png);
     width: 100%;
-    padding: 100%;
+    padding: 20px;
 
 }
  
