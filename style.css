@@ -79,6 +79,12 @@ body {
     width: 100%;
     padding: 20px;
 }
+/* 定义图片1:粉色底 */
+.img1 {
+    background-color: #FFCCCC;
+    width: 100%;
+    padding: 20px;
+}
  
 /* 底部 */
 .footer {
