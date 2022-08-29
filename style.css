@@ -85,6 +85,12 @@ body {
     width: 100%;
     padding: 20px;
 }
+/* 定义图片底:AI */
+.ai {
+    background-image: url(ai.jpg);
+    width: 100%;
+    padding: 20px;
+}
  
 /* 底部 */
 .footer {
