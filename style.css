@@ -85,9 +85,15 @@ body {
     width: 100%;
     padding: 20px;
 }
-/* 定义图片底:AI */
+/* 定义图片底1:AI */
 .ai {
-    background-image: url(ai.jpg);
+    background-image: url(ai.png);
+    width: 100%;
+    padding: 20px;
+}
+/* 定义图片底2:兴趣爱好 */
+.inter {
+    background-image: url(inter.png);
     width: 100%;
     padding: 20px;
 }
