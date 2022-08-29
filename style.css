@@ -12,7 +12,7 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: #DBC1CA;
+    background: #CC99CC;
     color: white;
 }
  
@@ -81,7 +81,7 @@ body {
 }
 /* 定义图片1:粉色底 */
 .img1 {
-    background-color: #DBC1CA;
+    background-color: #CC99CC;
     width: 100%;
     padding: 20px;
 }
