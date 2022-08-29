@@ -12,7 +12,7 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: #FFCCCC;
+    background: #DBC1CA;
     color: white;
 }
  
@@ -81,7 +81,7 @@ body {
 }
 /* 定义图片1:粉色底 */
 .img1 {
-    background-color: #FFCCCC;
+    background-color: #DBC1CA;
     width: 100%;
     padding: 20px;
 }
@@ -89,7 +89,7 @@ body {
 .ai {
     background-image: url(ai.png);
     width: 100%;
-    padding: 20px;
+    padding: 100%;
 }
 /* 定义图片底2:兴趣爱好 */
 .inter {
@@ -101,6 +101,7 @@ body {
 .keai {
     background-image: url(keai.png);
     width: 100%;
+    padding: 100%;
 
 }
  
