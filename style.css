@@ -97,6 +97,12 @@ body {
     width: 100%;
     padding: 20px;
 }
+/* 定义图片底3:兴趣爱好 */
+.keai {
+    background-image: url(keai.png);
+    width: 100%;
+
+}
  
 /* 底部 */
 .footer {
