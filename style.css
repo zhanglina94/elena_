@@ -12,7 +12,7 @@ body {
 .header {
     padding: 80px;
     text-align: center;
-    background: #FFFFCC;
+    background: #D8BFD8;
     color: white;
 }
  
@@ -79,9 +79,9 @@ body {
     width: 100%;
     padding: 20px;
 }
-/* 定义图片1:淡黄色底 */
+/* 定义图片1:藕粉色底 */
 .img1 {
-    background-color: #FFFFCC;
+    background-color: #D8BFD8;
     width: 100%;
     padding: 20px;
 }
