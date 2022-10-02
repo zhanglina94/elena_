@@ -1,0 +1,214 @@
+<html>
+ 
+<head><!--头部标签开始-->
+ 
+<title> GAME - 五子棋 </title>
+        
+<meta name="Generator" content="EditPlus">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+    
+<style type="text/css">
+    /*CSS区域*/
+table{
+        border: red 2px solid;
+        border-collapse: collapse;
+        text-align: center;
+    }
+td,th{
+        border: red 1px solid;
+        padding: 5, 10, 5, 10;
+    }
+</style>
+ 
+<script type="text/javascript">
+    /*javascript区域*/
+var BOARD_SIZE = 9;
+var board = new Array();
+var s = "";
+ 
+function play()
+{
+    if (board.length != 0)
+    {
+        alert("游戏已经开始了，点击“重新开始”开始新游戏");
+        return;
+    }
+    init();
+    show();
+}
+ 
+function init()
+{
+//    s = "";
+    board = new Array()
+    for (var i=0; i<BOARD_SIZE; i++)
+    {
+//        s += ((i+1)+' ');
+        board[i] = new Array();
+        for (var j=0; j<BOARD_SIZE; j++)
+        {
+            board[i][j] = "┼";
+//            s += board[i][j];
+        }
+//        s += "<br />";
+    }
+//    s += " ";
+//    for (var k=1; k<10; k++)
+    {
+//        s += " "+k;    
+    }
+    //alert(s);
+}
+ 
+function getBoard()
+{
+    return board;
+}
+ 
+//var flag = false;    //  电脑调用setChess又执行了computerDo
+ 
+function setChess(pos, chessMan)
+{
+    if (!pos)
+    {
+        return;
+    }
+    board[pos[0]][pos[1]] = chessMan;
+    show();
+    
+    if (chessMan=='●')
+    {
+        computerDo();
+    }
+    /*
+    if (flag)
+    {
+        return;
+    }
+    flag = false;
+        if (!flag)
+    {
+        computerDo();    
+    }
+    else
+        flag = false;
+    */
+}
+ 
+function computerDo()
+{
+    var x = parseInt(Math.random()*(BOARD_SIZE));
+    var y = parseInt(Math.random()*(BOARD_SIZE));
+    alert("Computer:"+x+"---"+y);
+    while (!checkPos(x+"", y+"") || hasChess(x-1,y-1))
+    {
+        x = parseInt(Math.random()*(BOARD_SIZE));
+        y = parseInt(Math.random()*(BOARD_SIZE));
+        alert("Computer:"+x+"---"+y);
+    }
+    var pos = [x-1, y-1];
+    setChess(pos, "○");
+}
+ 
+function show()
+{
+    s = "";
+    var node = document.getElementById("boardspan");
+    for (var i=0; i<BOARD_SIZE; i++)
+    {
+        s += ((i+1)+' ');
+        for (var j=0; j<BOARD_SIZE; j++)
+        {
+            s += board[i][j];
+        }
+        s += "<br />";
+    }
+    s += " ";
+    for (var k=1; k<10; k++)
+    {
+        s += " "+k;    
+    }
+    node.innerHTML = s;
+}
+ 
+function rePlay()
+{
+    init();
+    show();
+}
+ 
+ 
+function getPos()
+{
+    var pos = new Array();
+    var x = document.getElementById("posx").value;
+    var y = document.getElementById("posy").value;
+    
+    if (!checkPos(x, y))
+    {
+        alert("输入位置有误，请重新输入！");
+        return;
+    }
+ 
+    pos[0] = x - 1;
+    pos[1] = y - 1;
+ 
+    if (hasChess(pos[0], pos[1]))
+    {
+        alert("该位置已有棋子，请重新输入！");
+        return;
+    }
+    /*/防止电脑调用setChess时自动调用
+    document.getElementById("posx").value = "";
+    document.getElementById("posy").value = "";
+    */
+    //alert(pos[0] + "::" + pos[1]);
+    return pos;
+}
+ 
+function hasChess(x, y)
+{
+    return (board[x][y]!='┼')?true:false;
+}
+ 
+function checkPos(x, y)
+{    
+    var reg = "^[1-9]{1}$";
+    return (x.match(reg)&&y.match(reg))?true:false;
+}
+</script>
+ 
+</head><!--头部标签结束-->
+ 
+<body><!--主体标签开始-->
+    <!--注释区域-->
+<table>
+<th colspan=3 style="font-size:24; color:green">五子棋</th>
+<tr>
+    <td colspan=3>
+    <span id="boardspan">
+    棋盘显示区
+    </span>
+    </td>
+</tr>
+<tr>
+    <td rowspan=2>落子位置</td>
+    <td>横向：<input type="text" id="posx" size=4 /></td>
+    <td rowspan=2><input type="button" value="确定" οnclick="setChess(getPos(), '●')"</td>
+    <tr>
+        <td>竖向：<input type="text" id="posy" size=4 /></td>
+    </tr>
+</tr>
+<tr>
+    <th><input type="button" value="开始游戏" οnclick="play()" /></th>
+    <th colspan=2><input type="button" value="重新开始" οnclick="rePlay()" /></th>
+</tr>
+ 
+</table>
+ 
+ 
+</body><!--主体标签结束-->
+ 
+</html>
