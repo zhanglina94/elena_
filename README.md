@@ -11,6 +11,8 @@
 - index.html
 - script.js
 - style.css
+### life
+- LS.html
 ### linanote
 - notes.html
 - script.js
