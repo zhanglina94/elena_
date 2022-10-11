@@ -17,6 +17,8 @@
 - notes.html
 - script.js
 - style.css
+### profile
+- workprofile.html
 ### todo
 - index.html
 - scripttodo.js
