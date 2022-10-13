@@ -7,10 +7,6 @@
 - wechat.html
 ### games
 ### image
-### interest
-- index.html
-- script.js
-- style.css
 ### life
 - LS.html
 ### linanote
