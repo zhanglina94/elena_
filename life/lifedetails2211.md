@@ -90,4 +90,5 @@
 - K-BERT √
 
 ## 2022.11.27
-- NLP Preprocessing
+- NLP Preprocessing √
+- CLIP √
