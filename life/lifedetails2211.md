@@ -92,3 +92,7 @@
 ## 2022.11.27
 - NLP Preprocessing √
 - CLIP √
+
+## 2022.11.28
+- Reacrjs √
+- CLIP √
