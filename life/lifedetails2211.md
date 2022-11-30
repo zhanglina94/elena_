@@ -96,3 +96,8 @@
 ## 2022.11.28
 - Reacrjs √
 - CLIP √
+
+## 2022.11.30
+- AutoML √
+- Figma logo √
+
