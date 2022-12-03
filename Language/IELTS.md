@@ -1,0 +1,7 @@
+# Plan
+
+- Vocabulary
+- Lesson learn
+
+
+# 
