@@ -6,6 +6,11 @@
 - IELTS Learning
 
 
-### 2012.05
+### 2022.05
 - nodejs/react/creat-react-app my-app √
 - Take a photo √
+
+### 2022.06-08
+- Take a photo √
+
+### 2022.11
