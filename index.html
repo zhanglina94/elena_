@@ -5,14 +5,16 @@
 		<meta charset="utf-8" />
 		<title>Lina Zhang Website</title>
 		<style>
-			body {
-				/*加载背景图：图片地址 不平铺 */
-				background: url(image/home.png) no-repeat;
-				/* 让背景图基于容器大小伸缩 */
-				background-size: 80% 60%;
-				background-attachment: fixed;
-     
-			}
+			#bgImg {
+				  height: 100%;
+				  width: 100%;
+				  background: url('../image/home.png') no-repeat;
+				  background-size: cover;
+				  position: absolute;
+				  overflow: hidden;
+				
+				}
+
 		</style>
 	</head>
  
