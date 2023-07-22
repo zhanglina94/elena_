@@ -97,6 +97,12 @@ Romantic Sunday,
 Pour aller où(去哪儿),
 Mais je t'aime(可我爱你),
 
+### 2023
+野狼disco
+Heaven(天堂)
+需要浪漫
+
+
 # Books
 ### 2023
 一个人就一个人 刘同
